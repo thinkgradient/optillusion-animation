@@ -2,6 +2,9 @@
 title: "Is it a Duck or a Rabbit? For Google Cloud Vision, it depends how the image is rotated."
 author: "Max Woolf (@minimaxir)"
 date: "2019-03-06"
+
+Fatos Ismali comment: In this fork (thinkgradient's fork) image_not_results.csv file contains the output of the Microsoft Computer Vision API classification result. Please update the duck_labels and rabbit_labels below accordingly. 
+
 output:
   html_notebook:
     highlight: tango

@@ -1,6 +1,8 @@
 # modeling-link-aggregators
 
-Python code to submit rotated images to the Cloud Vision API + R code for visualizing it. This repository was used to create [this animation](https://twitter.com/minimaxir/status/1103676561809539072).
+Python code to submit rotated images to the Microsoft Computer Vision API + R code for visualizing it. This repository was used to create [this animation](https://twitter.com/minimaxir/status/1103676561809539072). 
+
+The code here has been forked from Max Woolf (@minimaxir) original repo: https://github.com/minimaxir/optillusion-animation which contains the code to leverage Google's Cloud Vision API.  
 
 All tools used:
 
@@ -11,11 +13,9 @@ All tools used:
 
 **Disclaimer**: This was my first time working with gganimate (and working around a few bugs which surfaced), as a result my R code is messier than my typical R code.
 
-## Maintainer
+## Maintaner
 
-Max Woolf ([@minimaxir](http://minimaxir.com))
-
-*Max's open-source projects are supported by his [Patreon](https://www.patreon.com/minimaxir). If you found this project helpful, any monetary contributions to the Patreon are appreciated and will be put to good creative use.*
+Fatos Ismali ([@bytebiscuit](http://www.thinkgradient.com))
 
 ## License
 
