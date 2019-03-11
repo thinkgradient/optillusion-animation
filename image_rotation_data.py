@@ -1,3 +1,8 @@
+#title: "Is it a Duck or a Rabbit? For Microsoft Computer Vision API, it depends how the image is rotated."
+#author: "Fatos Ismali (@bytebiscuit)"
+#date: "11/03/2019"
+#adapted from: Max Woolf's Google Vision example
+
 import requests
 import os
 import io
@@ -25,35 +30,7 @@ IMAGES_FOLDER = os.path.join(os.path.dirname(os.path.realpath(__file__)), "")
 
 subscription_key = "azure_computer_vision_subscription_key"
 
-def image_analysis_in_stream(subscription_key):
-    """ImageAnalysisInStream.
-    This will analyze an image from a stream and return all available features.
-    """
-    client = ComputerVisionClient(
-        endpoint="https://" + COMPUTERVISION_LOCATION + ".api.cognitive.microsoft.com/",
-        credentials=CognitiveServicesCredentials(subscription_key)
-    )
 
-    with open(os.path.join(IMAGES_FOLDER, "duckorrabbit.png"), "rb") as image_stream:
-        image_analysis = client.analyze_image_in_stream(
-            image=image_stream,
-            visual_features=[
-                VisualFeatureTypes.image_type, # Could use simple str "ImageType"
-                VisualFeatureTypes.faces,      # Could use simple str "Faces"
-                VisualFeatureTypes.categories, # Could use simple str "Categories"
-                VisualFeatureTypes.color,      # Could use simple str "Color"
-                VisualFeatureTypes.tags,       # Could use simple str "Tags"
-                VisualFeatureTypes.description # Could use simple str "Description"
-            ]
-        )
-
-    print("This image can be described as: {}\n".format(image_analysis.description.captions[0].text))
-
-    print("Tags associated with this image:\nTag\t\tConfidence")
-    for tag in image_analysis.tags:
-        print("{}\t\t{}".format(tag.name, tag.confidence))
-
-    print("\nThe primary colors of this image are: {}".format(image_analysis.color.dominant_colors))
 
 def get_rotated_image_labels(client, image, bg, phi):
 
