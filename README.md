@@ -2,7 +2,9 @@
 
 Python code to submit rotated images to the Microsoft Computer Vision API + R code for visualizing it. This repository was used to create [this animation](https://twitter.com/minimaxir/status/1103676561809539072). 
 
-The code here has been forked from Max Woolf (@minimaxir) original repo: https://github.com/minimaxir/optillusion-animation which contains the code to leverage Google's Cloud Vision API.  
+The code here has been forked from Max Woolf (@minimaxir) original repo: https://github.com/minimaxir/optillusion-animation which contains the code to leverage Google's Cloud Vision API. 
+
+*This fork contains the python file that calls the Microsoft Computer Vision API.*
 
 All tools used:
 
